@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br dark:from-[#0F2027] dark:via-[#203A43] dark:to-[#2C5364] from-[#8e9eab] to-[#eef2f3] flex justify-center min-h-screen p-4 md:pt-[50px] lg:pt-[150px]"
+  >
+    <div
+      class="min-w-[320px] h-fit w-[450px] bg-white dark:bg-[#3C3C3C] rounded-lg p-5 relative shadow-md shadow-[#9E9FA2] dark:shadow-[#282828]"
+      id="container"
+    >
+      <h2 class="mb-4 ml-3 dark:text-white">
+        To-Do List
+        <img
+          src="./assets/images/icon.png"
+          alt=""
+          class="w-5 inline pb-1 ml-1"
+        />
+      </h2>
+      <form action="#" class="flex">
+        <input
+          type="text"
+          name=""
+          id="inputText"
+          placeholder="Add your task"
+          class="bg-slate-200 color-slate-700 w-[360px] min-w-[300px] h-[50px] rounded-full focus-within:outline-none pl-[15px] lg:pr-[45px] pr-[95px] md:pr-[45px]"
+        />
+        <button
+          class="py-[13px] px-8 bg-[#FF5A45] rounded-full absolute right-[20px] text-white"
+          onclick="addTask()"
+        >
+          Add
+        </button>
+      </form>
+      <ul class="ml-3 my-5" id="listContainer"></ul>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
